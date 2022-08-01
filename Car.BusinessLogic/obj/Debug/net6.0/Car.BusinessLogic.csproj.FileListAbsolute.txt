@@ -1,0 +1,15 @@
+E:\Visual Studio\Car\Car.BusinessLogic\bin\Debug\net6.0\Car.BusinessLogic.deps.json
+E:\Visual Studio\Car\Car.BusinessLogic\bin\Debug\net6.0\Car.BusinessLogic.dll
+E:\Visual Studio\Car\Car.BusinessLogic\bin\Debug\net6.0\Car.BusinessLogic.pdb
+E:\Visual Studio\Car\Car.BusinessLogic\bin\Debug\net6.0\Car.Model.dll
+E:\Visual Studio\Car\Car.BusinessLogic\bin\Debug\net6.0\Car.Model.pdb
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.csproj.AssemblyReference.cache
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.GeneratedMSBuildEditorConfig.editorconfig
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.AssemblyInfoInputs.cache
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.AssemblyInfo.cs
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.csproj.CoreCompileInputs.cache
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.csproj.CopyComplete
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.dll
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\refint\Car.BusinessLogic.dll
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\Car.BusinessLogic.pdb
+E:\Visual Studio\Car\Car.BusinessLogic\obj\Debug\net6.0\ref\Car.BusinessLogic.dll

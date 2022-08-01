@@ -1,6 +1,6 @@
 ﻿namespace Car.Model
 {
-    internal class CarC
+    public class CarC
     {
         public int Id { get; set; }
         public string Mark { get; set; } = string.Empty;
