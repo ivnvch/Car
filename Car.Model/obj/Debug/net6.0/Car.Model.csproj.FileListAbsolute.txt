@@ -1,0 +1,12 @@
+E:\Visual Studio\Car\Car.Model\bin\Debug\net6.0\Car.Model.deps.json
+E:\Visual Studio\Car\Car.Model\bin\Debug\net6.0\Car.Model.dll
+E:\Visual Studio\Car\Car.Model\bin\Debug\net6.0\Car.Model.pdb
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.csproj.AssemblyReference.cache
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.GeneratedMSBuildEditorConfig.editorconfig
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.AssemblyInfoInputs.cache
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.AssemblyInfo.cs
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.csproj.CoreCompileInputs.cache
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.dll
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\refint\Car.Model.dll
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\Car.Model.pdb
+E:\Visual Studio\Car\Car.Model\obj\Debug\net6.0\ref\Car.Model.dll

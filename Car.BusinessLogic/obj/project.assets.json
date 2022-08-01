@@ -852,6 +852,22 @@
             "rid": "win"
           }
         }
+      },
+      "Car.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "AutoMapper": "11.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "11.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.0-preview.6.22329.4",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0-preview.6.22329.4"
+        },
+        "compile": {
+          "bin/placeholder/Car.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Car.Model.dll": {}
+        }
       }
     }
   },
@@ -2972,12 +2988,18 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Car.Model/1.0.0": {
+      "type": "project",
+      "path": "../Car.Model/Car.Model.csproj",
+      "msbuildProject": "../Car.Model/Car.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "AutoMapper >= 11.0.1",
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
+      "Car.Model >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0-preview.6.22329.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0-preview.6.22329.4"
     ]
@@ -3013,7 +3035,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Visual Studio\\Car\\Car.Model\\Car.Model.csproj": {
+              "projectPath": "E:\\Visual Studio\\Car\\Car.Model\\Car.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
