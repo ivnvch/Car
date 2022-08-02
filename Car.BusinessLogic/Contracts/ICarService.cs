@@ -5,8 +5,8 @@ namespace Car.BusinessLogic.Contracts
 {
     public interface ICarService
     {
-        IEnumerable<CarC> GetCars();
-        CarC GetCar(int id);
+        IEnumerable<CarViewModel> Gets();
+        CarViewModel Get(int id);
         void Create(CarViewModel carView);
         void Update(int id, CarViewModel carView);
         void Delete(int id);

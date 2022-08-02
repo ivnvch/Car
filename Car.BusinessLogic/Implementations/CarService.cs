@@ -39,14 +39,18 @@ namespace Car.BusinessLogic.Implementations
             throw new Exception("Car not exist!");
         }
 
-        public CarC GetCar(int id)
+        public CarViewModel Get(int id)
         {
-            return _context.Cars.FirstOrDefault(x => x.Id == id);
+            var car = _context.Cars.FirstOrDefault(x => x.Id == id);
+            var carView = _mapper.Map<CarViewModel>(car);
+            return carView;
         }
 
-        public IEnumerable<CarC> GetCars()
+        public IEnumerable<CarViewModel> Gets()
         {
-            return _context.Cars.AsNoTracking().ToList();
+            var cars = _context.Companies.AsNoTracking().ToList();
+            var carsView = _mapper.Map<IEnumerable<CarViewModel>>(cars);
+            return carsView;
         }
 
         public void Update(int id, CarViewModel car)
@@ -56,7 +60,7 @@ namespace Car.BusinessLogic.Implementations
 
             if (updateCar == null)
             {
-                throw new Exception("Game not found");
+                throw new Exception("Car not found");
             }
             updateCar = _car;
             _context.Cars.Update(updateCar);

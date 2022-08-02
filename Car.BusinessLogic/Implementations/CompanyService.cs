@@ -1,15 +1,16 @@
-﻿using AutoMapper;
+﻿ using AutoMapper;
 using Car.BusinessLogic.Contracts;
 using Car.Model;
 using Car.Model.ViewModel;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Car.BusinessLogic.Implementations
 {
     public class CompanyService : ICompanyService
     {
         private readonly ApplicationContext _context;
-        IMapper _mapper;
+        private readonly IMapper _mapper;
         public CompanyService(ApplicationContext context, IMapper mapper)
         {
             _context = context;
@@ -34,19 +35,34 @@ namespace Car.BusinessLogic.Implementations
             throw new Exception("Company not exist!");
         }
 
-        public IEnumerable<Company> GetCompany()
+        public IEnumerable<CompanyViewModel> Gets()
         {
-           return _context.Companies.AsNoTracking().ToList();
+            //var list = new List<CompanyViewModel>();
+            //foreach (var company in _context.Companies)
+            //{
+            //    list = _context.Companies.AsNoTracking().ToList();
+            //}
+            //var  copmanies?? = _mapper.Map<IEnumerable<Company>>, List<CompanyViewModel>> (_context.);
+            //return copmanies;
+           //return _context.Companies.AsNoTracking().ToList();
+           var companies = _context.Companies.AsNoTracking().ToList();
+           var companiesView = _mapper.Map<IEnumerable<CompanyViewModel>>(companies);
+           return companiesView;
         }
 
-        public Company GetCompany(int id)
+        public CompanyViewModel Get(int id)
         {
-            return _context.Companies.FirstOrDefault(x => x.Id == id);
+            var company = _context.Companies.FirstOrDefault(x => x.Id == id);
+            var companyView = _mapper.Map<CompanyViewModel>(company);
+            return companyView;
         }
 
-        public void Update(int id, CompanyViewModel company)
+        public void Update(int id, CompanyViewModel companyView)
         {
-            var comp = _mapper.Map<CompanyViewModel, Company>(company);
+            //Company salon = _context.Companies.FirstOrDefault(s => s.Id == id);
+            //if (salon == null) throw new Exception("Object = null");
+            //else _context.Update(salon);
+            var comp = _mapper.Map<CompanyViewModel, Company>(companyView);
             _context.Update(comp);
             _context.SaveChanges();
         }

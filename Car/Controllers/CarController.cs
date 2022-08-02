@@ -22,14 +22,14 @@ namespace Car.Controllers
         [HttpGet]
         public ActionResult <IEnumerable<CarC>> Get()
         {
-            return Ok(_car.GetCars());
+            return Ok(_car.Gets());
         }
 
         // GET api/<CarController>/5
         [HttpGet("{id}")]
         public IActionResult Get(int id)
         {
-            return Ok(_car.GetCar(id));
+            return Ok(_car.Get(id));
         }
 
         // POST api/<CarController>

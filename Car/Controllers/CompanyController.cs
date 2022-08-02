@@ -21,16 +21,16 @@ namespace Car.Controllers
 
         // GET: api/<CompanyController>
         [HttpGet]
-        public ActionResult<IEnumerable<Company>> Get()
+        public ActionResult<IEnumerable<CompanyViewModel>> Get()
         {
-            return Ok(_company.GetCompany());
+            return Ok(_company.Gets());
         }
 
         // GET api/<CompanyController>/5
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-            return Ok(_company.GetCompany(id));
+            return Ok(_company.Get(id));
         }
 
         // POST api/<CompanyController>
